@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maël JAMIN</title>
+
+    <!-- links -->
     <link rel="stylesheet" type="text/css" href="packages/pico-master/css/pico.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/splide.min.css">
+
+    <!-- scripts --->
+    <script defer src="assets/js/splide.min.js" type="module"></script>
+    <script defer type="module">
+        new Splide( '.splide' ).mount();
+    </script>
 </head>
 <body>
     <section aria-label="En tête">
@@ -41,8 +50,38 @@
                     <img src="https://source.unsplash.com/3Ijt7UkSBYE/1500x750" alt="Architecture">
                     <figcaption>Image from <a href="https://unsplash.com">unsplash.com</a></figcaption>
                 </figure>
-                <h3>Nulla augue metus</h3>
-                <p>Pacilisis sed ante ut, posuere volutpat quam. Maecenas maximus blandit mi ac finibus. Proin quis lacinia tellus. Aliquam erat volutpat. Aliquam erat volutpat. Phasellus suscipit nisi augue, id accumsan tortor auctor ut. Duis odio arcu, egestas nec nulla vel, fermentum bibendum ex.</p>
+                <div>
+                    <h2>Mes projets</h2>
+                    <div class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <article>
+                                        <header>Projet 1</header>
+                                        je suis dans mon article
+                                        <footer>Footer 1</footer>
+                                    </article>
+                                </li>
+                                <li class="splide__slide">
+                                    <article>
+                                        <header>Projet 1</header>
+                                        je suis dans mon article
+                                        <footer>Footer 1</footer>
+                                    </article>
+                                </li>
+                                <li class="splide__slide">
+                                    <article>
+                                        <header>Projet 1</header>
+                                        je suis dans mon article
+                                        <footer>Footer 1</footer>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Pacilisis sed ante ut, posuere volutpat quam. Maecenas maximus blandit mi ac finibus. Proin quis lacinia tellus. Aliquam erat volutpat. Aliquam erat volutpat. Phasellus suscipit nisi augue, id accumsan tortor auctor ut. Duis odio arcu, egestas nec nulla vel, fermentum bibendum ex.</p>
+                </div>
+
                 <h3>Sed purus sapien, porta a cursus sed, maximus et metus.</h3>
                 <p>Phasellus molestie ante sed massa bibendum, eget tempus ex sollicitudin. Vestibulum libero nulla, porttitor nec faucibus et, scelerisque eget quam. Nullam finibus tempor dui, vel congue urna condimentum ac. Fusce ultricies mauris justo, nec vulputate mauris pulvinar eu. Sed tempus ligula lorem, at tincidunt risus mollis non. Quisque et turpis sit amet sapien gravida ullamcorper in eu velit. Curabitur luctus ornare finibus. Proin tempor nulla sagittis est fermentum dapibus. Vestibulum posuere mattis congue. Ut porttitor id sem euismod tristique. Quisque mi est, posuere nec lorem eu, vulputate vehicula diam. Nullam scelerisque, libero posuere efficitur bibendum, urna odio finibus lorem, sed volutpat dolor ligula in dolor. Suspendisse suscipit efficitur neque, ut porta tellus mollis vel. Nam consequat arcu ac tellus porta, nec egestas orci sodales.</p>
             </section>
@@ -75,9 +114,12 @@
                     <h2>Me contacter</h2>
                     <h3></h3>
                 </hgroup>
-                <form class="grid">
-                    <input type="text" id="name" name="name" placeholder="Nom Prénom" aria-label="Nom Prénom" required="">
-                    <input type="email" id="email" name="email" placeholder="Adresse Email" aria-label="Adresse Email" required="">
+                <form>
+                    <div class="grid">
+                        <input type="text" id="name" name="name" placeholder="Nom Prénom" aria-label="Nom Prénom" required="">
+                        <input type="email" id="email" name="email" placeholder="Adresse Email" aria-label="Adresse Email" required="">
+                    </div>
+                    <textarea id="message" name="message" placeholder="Message" rows="3"></textarea>
                     <button type="submit" onclick="event.preventDefault()">Envoyer</button>
                 </form>
             </article>
