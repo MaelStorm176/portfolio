@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+}
+
+.items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    margin: 15px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.desc {
+    font-family: Geneva_9;
+    font-size: 2em;
+}
+
